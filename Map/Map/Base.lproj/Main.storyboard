@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Map" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="22x-fz-OvQ">
+                                <rect key="frame" x="0.0" y="145" width="414" height="657"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="most favorite places" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwB-8f-Ene">
+                                <rect key="frame" x="76" y="51" width="262" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="oTS-OC-3dg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Click on the dots to see the details and on the map to add you own spot" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uaf-PG-lfO">
+                                <rect key="frame" x="5" y="78" width="404" height="68"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="22x-fz-OvQ" firstAttribute="top" secondItem="Uaf-PG-lfO" secondAttribute="bottom" constant="8" id="0Bs-DV-bxV"/>
+                            <constraint firstItem="dwB-8f-Ene" firstAttribute="centerX" secondItem="Uaf-PG-lfO" secondAttribute="centerX" id="4iF-Al-l16"/>
+                            <constraint firstItem="Uaf-PG-lfO" firstAttribute="top" secondItem="dwB-8f-Ene" secondAttribute="bottom" constant="-5" id="D3N-k7-4C0"/>
+                            <constraint firstItem="dwB-8f-Ene" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="GWO-BM-RyD"/>
+                            <constraint firstItem="dwB-8f-Ene" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="P4L-VG-iGU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="22x-fz-OvQ" secondAttribute="bottom" constant="60" id="QVO-U2-5ri"/>
+                            <constraint firstItem="Uaf-PG-lfO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="nuH-ZW-csL"/>
+                            <constraint firstItem="22x-fz-OvQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="101" id="qDY-FO-kUg"/>
+                            <constraint firstItem="22x-fz-OvQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qg5-o5-xdp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uaf-PG-lfO" secondAttribute="trailing" constant="5" id="xG2-3C-jZZ"/>
+                            <constraint firstItem="22x-fz-OvQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xMW-FY-ZQg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="22x-fz-OvQ" id="hw0-L3-f0f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="742.02898550724649" y="87.723214285714278"/>
+        </scene>
+    </scenes>
+</document>
